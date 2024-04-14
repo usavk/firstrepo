@@ -1,55 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>hello all</title>
-<style>
-  #hi {
-    background-color: skyblue;
-    padding: 30px;
-  }
-  #top {
-    margin-top: 50px;
-  }
-  #top td {
-    padding-right: 40px; /* Adjust as needed */
-    padding-left: 10px; /* Adjust as needed */
-  }
-  #image {
-    height: 50px;
-    width: 50px;
-    border-radius: 30px;
-  }
-  body {
-    background-color: pink;
-  }
-  #search-container {
-    display: inline-block;
-  }
-  #search {
-margin-top:20px;
-    width: 200px;
-  }
-  #submit {
-    width: 100px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
 <body>
-<div id='hi'>
-  <table>
-    <tr id='top'>
-      <td><img id='image' src='https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg'></td>
-      <td class="td"><a href="C:\xampp\htdocs\cake\login.html"> home</a></td>
-      <td class="td"><a href='#about'>account</a></td>
-      <td id="search-container">
-        <form>
-          <input id='search' type='search' name='search' placeholder='search' >
-          <input id='submit' type='submit' value='Submit'>
-        </form>
-      </td>
-    </tr>
-  </table>
-</div>
-<h1> WELCOME  </h1>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am passionate about technology and love to create awesome projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at email@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
 </body>
 </html>
